@@ -1,0 +1,117 @@
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+body{
+    text-align: center;
+    background-color: black;
+}
+
+.game{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background:url(img/ba.gif);
+    width: 8 auto;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.game_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    transition: transform 300ms ease-in;
+}
+
+.game_button:hover{
+    transform: scale(1.1);
+}
+.game_field{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: lightyellow;
+}
+
+.game_button{
+    width: 60px;
+    height: 60px;
+    background-color: wheat;
+    border: 4px solid black;
+    font-size: 24px;
+}
+
+.game_timer{
+    width: 100px;
+    background-color: white;
+    text-align: center;
+    border: 5px solid black;
+    font-size: 30px;
+    margin-top: 8px;
+    border-radius: 20px;
+    visibility: hidden; /*자리에는 있지만 평소에는 안보이게*/
+    user-select: none;
+    cursor: none;
+}
+
+.game_score{
+    text-align: center;
+    width: 50px;
+    height: 55px;
+    margin-top: 8px;
+    font-size: 46px;
+    background-color: darksalmon;
+    border: 3px solid black;
+    border-radius: 50%;
+    color: white;
+    visibility: hidden;/*자리에는 있지만 평소에는 안보이게*/
+    user-select: none;
+    cursor: none;
+}
+
+
+.pop-up{
+    display: block;
+    width: 400px;
+    height: 140px;
+    padding: 20px;
+    background-color: #00000090;
+    color: white;
+    border-radius: 20px;
+    margin: auto;
+    text-align: center;
+    transform: translateY(-160%);
+}
+
+.pop-up--hide{
+    display: none;
+
+}
+
+.pop-up_refresh{
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    background-color: wheat;
+    border: 2px solid black;
+    border-radius: 50%;
+
+}
+
+.pop-up_message{
+    display: block;
+    font-size: 38px;
+}
+
+.jang:hover,
+.bug:hover{
+    transform: scale(1.1);
+}
+
+.jang, .bug{
+    transition: transform 100ms ease-in;
+}
